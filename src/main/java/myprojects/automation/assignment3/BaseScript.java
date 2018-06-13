@@ -49,10 +49,10 @@ public class BaseScript {
         switch (Properties.getBrowser()) {
             case BrowserType.CHROME:
                 System.setProperty("webdriver.chrome.driver", BaseScript.class.getResource("chromedriver.exe").getPath());
-                driver = new ChromeDriver();
+                 driver = new ChromeDriver();
                 break;
             case BrowserType.FIREFOX:
-                System.setProperty("webdriver.gecko.driver", BaseScript.class.getResource("geckodriver.exe").getPath());
+                System.setProperty("webdriver.gecko.driver",BaseScript.class.getResource("geckodriver.exe").getPath());
                 driver = new FirefoxDriver();
                 break;
             default:
